@@ -1,20 +1,40 @@
 const mongoose = require('mongoose');
 
 const ProductSchema = new mongoose.Schema({
-  pname: { 
+  sku: {
+    type: String,
+    require: true,
+    default: 'null'
+  },
+  item: { 
     type: String, 
     trim: true, 
     minlength: 1,
-    maxlength: 100
+    maxlength: 100,
+    require: true,
+    default: 'Unnamed-Product'
   },
-  _pid: {
-    type: mongoose.Types.ObjectId, 
-    required:true,
+  price: {
+    type: Number,
+    required: true
   },
-  pcode: { 
-  }
+  qty: {
+    type: Number,
+    required: true,
+    default: 0
+  },
+  size: {
+    type: String,
+    default: 'M'
+  },
+  feature: {
+    type: [String]
+  },
+  categories: {
+    type: [String]
+  },
 })
 
 const Product = mongoose.model('Product', ProductSchema);
 
-module.exports = Task;
+module.exports = Product;
