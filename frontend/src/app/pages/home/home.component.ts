@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
+    console.log(AOS);
   //   $(".navbar .nav-link").on('click', function(event){
   //     var hash = this.hash;
   //     if (this.hash !== "") {
