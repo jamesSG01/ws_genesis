@@ -1,10 +1,10 @@
-<nav class="bg-none w-full m-auto backdrop-blur-sm sticky top-0">
+<nav class="bg-[#0000000c] w-full m-auto backdrop-blur-md sticky top-0">
   <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
     <a [routerLink]="['/']" class="flex items-center hover:opacity-60	">
       <img src="../../assets/imgs/genesis_logo-transparent.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
       <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Genesiz</span>
     </a>
-    
+
     <button data-collapse-toggle="mega-menu-full" type="button"
       class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       aria-controls="mega-menu-full" aria-expanded="false">
@@ -16,7 +16,7 @@
           clip-rule="evenodd"></path>
       </svg>
     </button>
-    <div class=" justify-between items-center w-full md:flex md:w-auto md:order-1">
+    <div class=" justify-between items-center w-full md:flex md:w-auto md:order-1 ml-auto">
       <ul
         class="bg-none flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
@@ -34,38 +34,82 @@
                 clip-rule="evenodd"></path>
             </svg></button>
         </li>
-        <li>
+        <!-- <li>
           <a [routerLink]="['/services']"
-            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Dịch vụ</a>
-        </li>
+            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Dịch
+            vụ</a>
+        </li> -->
         <li>
           <a [routerLink]="['/contact']"
-            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Liên hệ</a>
+            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+            Kết Nối</a>
         </li>
       </ul>
     </div>
     <!--/navlist-->
 
     <!-- Search-bar -->
-    <div class=" relative md:flex md:w-auto md:order-1">
+    <div class=" relative md:flex md:w-auto md:order-1 ml-auto">
       <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-        <svg class="w-5 h-5 text-gray-500" aria-hidden="false" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+        <svg class="w-5 h-5 text-gray-500" aria-hidden="false" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+            clip-rule="evenodd"></path>
+        </svg>
         <span class="sr-only">Search icon</span>
       </div>
-      <input type="text" id="search-navbar" class="block p-2 pl-10 w-full text-white focus:text-gray-900 bg-transparent focus:bg-[#f9f9f998] rounded-lg border border-gray-600 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tìm kiếm...">
+      <input type="text" id="search-navbar"
+        class="block p-2 pl-10 w-full text-white focus:text-gray-900 bg-transparent focus:bg-[#f9f9f998] rounded-lg border border-gray-600 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Tìm kiếm...">
     </div>
     <!-- /Search-bar -->
 
+    <!-- ShoppingCart-->
+    <div
+      class=" relative md:flex md:w-auto md:order-1 ml-auto mr-5 my-auto active:scale-90 opacity-60 hover:opacity-80">
+      <svg fill="white" width="20" height="20" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-v6 icon-v6-cart">
+        <path
+          d="M4.083 12.542c0 .81.648 1.458 1.459 1.458C6.352 14 7 13.352 7 12.542c0-.81-.648-1.459-1.458-1.459-.81 0-1.459.648-1.459 1.459zm4.667 0c0 .81.648 1.458 1.458 1.458.81 0 1.459-.648 1.459-1.458 0-.81-.648-1.459-1.459-1.459-.81 0-1.458.648-1.458 1.459zm5.234-9.56a.226.226 0 0 0-.049-.244.31.31 0 0 0-.227-.113H3.775L3.29.665A.885.885 0 0 0 2.431 0H.875A.871.871 0 0 0 0 .875c0 .486.389.875.875.875h.875l1.782 7.21c.089.393.44.67.843.665h6.984c.4 0 .748-.275.842-.664l1.783-5.98v.001z"
+          fill-rule="evenodd"></path>
+      </svg>
+      <div ng-bind="itemCount"
+        class="header__counter bg-pink-500 text-white rounded-full w-[20px] h-[20px] relative top-[-10px] right-[5px] text-center font-medium">
+        10</div>
+    </div>
+    <!-- /ShoppingCart-->
+
+
     <!-- Đăng Nhập Button-->
-    <div class="flex md:order-3">
-      <button [routerLink]="['/auth']" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Đăng nhập</button>
-      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+    <div class="flex md:order-3 hidden">
+      <button [routerLink]="['/auth']" type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Đăng nhập</button>
+      <button data-collapse-toggle="navbar-cta" type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-cta" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
     </div>
     <!-- /Đăng Nhập Button-->
+
+    <!---->
+    <div
+      class="flex md:order-3 overflow-hidden relative w-10 h-10 p-1 bg-gray-100 rounded-full dark:bg-gray-600 active:ring-2 active:ring-gray-700 ">
+      <svg class="absolute -left-1 w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+      </svg>
     </div>
+    <!---->
+  </div>
 
   <div id="mega-menu-full-dropdown"
     class="hidden mt-1 bg-gray-50 border-gray-200 shadow-sm md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
