@@ -14,9 +14,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,14 +28,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AuthComponent,
     ContactComponent,
-    ServicesComponent,
-    PaginationComponent,
-    CarouselComponent
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
