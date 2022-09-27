@@ -15,6 +15,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { ProductThumbnailComponent } from './components/product-thumbnail/product-thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     AuthComponent,
     ContactComponent,
     ServicesComponent,
-    PaginationComponent
+    PaginationComponent,
+    ProductThumbnailComponent
   ],
   imports: [
     BrowserModule,
