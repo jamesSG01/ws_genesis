@@ -1,3 +1,24 @@
 nav { 
     z-index: 9001;
+    border-bottom: 1px solid #393939
+}
+
+ul { 
+    height: 60px;
+
+}
+div.nav-button {
+    border-left: 1px solid #393939;
+}
+li, div.nav-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 0 1em;
+    height: 60px;
+    &:hover {
+        background-color: #393939;
+    }
 }
