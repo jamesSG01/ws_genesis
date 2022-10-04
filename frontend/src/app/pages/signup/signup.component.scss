@@ -1,0 +1,84 @@
+input { 
+    &:active {
+        outline: 2px solid #0f62fe;
+        outline-offset: -2px;
+    }
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.28572;
+    letter-spacing: .16px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0 1rem;
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: #f4f4f4;
+    color: #161616;
+    transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-bezier(.2,0,.38,.9);
+}
+
+#continue-button{
+    &:active { 
+        background-color: #002d9c;
+    }
+    &:hover { 
+        background-color: #0353e9;
+    }
+    border: 1px solid transparent;
+    background-color: #0f62fe;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.28572;
+    letter-spacing: .16px;
+    position: relative;
+    display: inline-flex;
+    min-height: 3rem;
+    width: 50%;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin: 0;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    text-decoration: none;
+    transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+    vertical-align: top;
+}
+#customBtn {
+    display: inline-block;
+    background: rgb(225, 225, 225);
+    color: #444;
+    border: #cccccc 1px solid;
+    width: 100%;
+    white-space: nowrap;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+    background: rgb(203, 203, 203);
+  }
+  span.label {
+    font-family: serif;
+    font-weight: normal;
+  }
+  span.icon {
+    background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+  }
+  span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+  }
