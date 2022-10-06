@@ -1,86 +1,60 @@
 <div class="home-container">
     <!-- Introduction -->
-    <section class="bg-white dark:bg-gray-900 -mt-[75px] ">
-        <div class="flex flex-col items-center justify-center bg-gray-900 p-[75px] rounded-b-[10px] shadow-lg 
-                    max-w-[95vw] min-h-[95vh] mx-auto">
-            <div class="place-self-center mx-auto">
-                <h1 class="mb-6 max-w-[50vw] text-8xl font-bold mx-auto leading-none text-white dark:text-white">
-                    <span class="">
-                        Thời trang
-                    </span>
-                    <br>
-                    <span class="">
-                        & Gadgets
-                    </span>
+    <section class="bg-black min-h-screen">
+        <div class="flex flex-col max-w-[50vw] p-20">
+                <h1 class="text-6xl font-bold leading-none text-white">
+                    THỜI TRANG &<br>
+                    DECOR/GADGETS
                 </h1>
-                <p
-                    class="text-center mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                    Genesiz không đặt ra giới hạn.
-                    <br> Khám phá từ thời trang đến gadgets & đồ decor/collectable.
-                    <br> Có mặt ở mọi nơi Genesiz từ <br> <span> Shopee</span>, <span> Tiki</span>, đến
+                <p class="mt-[4em] text-base font-medium text-gray-500">
+                    Thỏa sức khám phá Thời Trang, Gadgets, Decor & Collectable và nhiều hơn !<br> 
+                    <a> Shopee</a>, <a> Lazada </a>, <a>Tiktok</a>, <a>Instagram</a> &
                     <a href="/" class="text-blue">@WEBSTORE</a>.
                 </p>
-            </div>
-            <button class="hover:opacity-60">
-                <div class="border border-white-600 rounded-[30px] w-[60px] h-[60px]">
-                    <span> <i class="mt-[20px] arrow down"></i></span>
-                </div>
-            </button>
-            <!-- <picture class="">
-                <img src="../../../assets/imgs/homepage/temp-bg-02.jpg" alt="mockup">
-            </picture>                 -->
         </div>
+        <button class="hover:opacity-60 block mx-auto mt-20">
+            <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="white" width="48" height="48" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M24.59 16.59L17 24.17 17 4 15 4 15 24.17 7.41 16.59 6 18 16 28 26 18 24.59 16.59z">
+                </path>
+                <title>Arrow down</title>
+            </svg>
+        </button>
     </section>
 
     <!-- /Introduction -->
 
     <!-- NEW PRODUCTS -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class=" items-center mx-auto ">
+    <section class="bg-[#161616] px-4">
+        <div class="flex flex-row flex-nowrap pt-40">
             <!-- <h2 class="  "> VỪA CẬP BẾN</h2> -->
-            <div class="flex flex-col justify-center align-center content-center mx-auto">
-                <h2 class=" font-extrabold text-[#f0f0fa] dark:text-white mx-auto"> VỪA CÂP BẾN</h2>
-                <h3 class=" font-extrabold mx-auto text-pink-400"> VỪA CẬP BẾN </h3>
-            </div>
-
-            <div>
-                <a href="/products" class="w-[100%] block text-right text-1xl mt-[-2em] mb-4"> Xem tất cả</a>
-                <app-products></app-products>
-            </div>
+            <h3 class="min-w-[25vw] font-semibold text-5xl text-white"> 
+                <span class="border-l-2 border-solid border-purple-600 block pl-2">MỚI NHẤT</span>
+            </h3>
+            <app-product-list></app-product-list>
         </div>
     </section>
     <!--/ NEW PRODUCTS -->
 
     <!-- BEST SELLERS -->
-    <section class="">
-        <div class="gap-16 items-center mx-auto">
-            <div class="flex flex-col justify-center align-center content-center">
-                <h2 class="text-center font-extrabold text-[#f0f0fa] dark:text-white"> BEST SELLERS</h2>
-                <h3 class="text-center font-extrabold text-purple-400"> BEST SELLERS </h3>
-            </div>
-
-
-            <a href="/products" class="w-[100%] block text-right text-1xl mt-[-2em] mb-4"> Xem tất cả</a>
-            <div class="bg-gray-200">
-                <app-products class="bg-gray-200"></app-products>
-            </div>
+    <section class="bg-[#161616]">
+        <div class="flex flex-row flex-nowrap px-4 pt-40">
+            <!-- <h2 class="  "> VỪA CẬP BẾN</h2> -->
+            <h3 class="min-w-[25vw] font-semibold text-5xl text-white"> 
+                <span class="border-l-2 border-solid border-purple-600 block pl-2">HOT NHẤT</span>
+            </h3>
+            <app-product-list></app-product-list>
         </div>
     </section>
     <!-- /BEST SELLERS -->
 
     <!-- YOU MAY LOVE IT PRODUCTS -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="gap-16 items-center mx-auto max-w-screen-xl">
-            <!-- <h2 class="  "> BEST SELLERS </h2> -->
-            <div class="flex flex-col justify-center align-center content-center">
-                <h2 class="text-center font-extrabold text-[#f0f0fa] dark:text-white"> CÓ THỂ BAN THÍCH</h2>
-                <h3 class="text-center font-extrabold text-blue-400"> CÓ THỂ BẠN THÍCH </h3>
-            </div>
-
-            <div>
-                <a href="/products" class="w-[100%] block text-right text-1xl mt-[-2em] mb-4"> Xem tất cả</a>
-                <app-products></app-products>
-            </div>
+    <section class="bg-[#161616]">
+        <div class="flex flex-row flex-nowrap pt-40 px-4">
+            <!-- <h2 class="  "> VỪA CẬP BẾN</h2> -->
+            <h3 class="min-w-[25vw] font-semibold text-5xl text-white"> 
+                <span class="border-l-2 border-solid border-purple-600 block pl-2">THỬ XEM</span>
+            </h3>
+            <app-product-list></app-product-list>
         </div>
     </section>
     <!-- /YOU MAY LOVE IT PRODUCTS -->
@@ -95,7 +69,7 @@
         <div class="bg-gray-900 max-w-[80vw] h-[300px] mx-auto ">
 
         </div>
-        <app-products></app-products>
+        <app-product-list></app-product-list>
     </section>
 
     <section class="bg-white dark:bg-gray-900">
