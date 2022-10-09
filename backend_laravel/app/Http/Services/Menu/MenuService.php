@@ -1,4 +1,9 @@
 <?php
+/**
+ * Date:
+ * Author:
+ * Purpose:
+ */
 
 namespace App\Http\Services\Menu;
 use Illuminate\Support\Str;
@@ -30,7 +35,11 @@ class MenuService extends Model {
 		return true;
 	}
 
-	public function getParent() {
+	public function getParent($parent_id = 1) {
 		return Menu::where('parent_id', '0')->get();
+	}
+
+	public function getAll() {
+		return Menu::orderbyDesc('id')->paginate(20);
 	}
 }
