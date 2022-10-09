@@ -8,10 +8,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'products', component: ProductListComponent },
+  { path: 'products', component: InventoryComponent },
   { path: 'product', component: ProductComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
