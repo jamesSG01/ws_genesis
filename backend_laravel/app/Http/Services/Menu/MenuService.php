@@ -11,7 +11,6 @@ use App\Models\Menu;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Session;
 
-
 class MenuService extends Model {
 
 	public function create($request) {
@@ -35,6 +34,17 @@ class MenuService extends Model {
 		return true;
 	}
 
+	static public function destroy($request) {
+		$id = (int) $request->input('id');
+		$menu = Menu::where('id', $id)->first();
+
+		if ($menu) {
+			return Menu::where('id', $id)->orWhere('parent_id', $id)->delete();
+		}
+
+		return false;
+	}
+
 	public function getParent($parent_id = 1) {
 		return Menu::where('parent_id', '0')->get();
 	}
@@ -42,4 +52,6 @@ class MenuService extends Model {
 	public function getAll() {
 		return Menu::orderbyDesc('id')->paginate(20);
 	}
+
+	
 }
